@@ -4,8 +4,15 @@
              x:Class="Cross_Platform_Project.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-           
+        <VerticalStackLayout>
+
+            <SearchBar x:Name="SearchBox"
+                           Placeholder="Search here "
+                           TextChanged="Looking"/>
+            
+            
+
+
         </VerticalStackLayout>
     </ScrollView>
 
