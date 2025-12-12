@@ -5,13 +5,20 @@
 
     <ScrollView>
         <VerticalStackLayout>
-
+            
             <SearchBar x:Name="SearchBox"
                            Placeholder="Search here "
                            TextChanged="Looking"/>
-            
-            
-
+        
+         <ListView x:Name="ListOfMovies" ItemTapped="ListOfMovies_Tapped">
+         <ListView.ItemTemplate>
+         <DataTemplate>
+                        <TextCell Text="{Binding director}"
+                         Detail="{Binding rating}" />
+                    
+         </DataTemplate>
+         </ListView.ItemTemplate>
+         </ListView>
 
         </VerticalStackLayout>
     </ScrollView>
