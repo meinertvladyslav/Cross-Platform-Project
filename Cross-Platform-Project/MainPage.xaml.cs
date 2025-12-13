@@ -19,12 +19,11 @@ namespace Cross_Platform_Project
         List<Movies> movieList = new List<Movies>();
         //helps with downloading file
         HttpClient client = new HttpClient();
-
-        private async void LoadMovies()
+        
+        private async Task LoadMovies()
         {
-            try
-            {
-                //checking if file exists, if it doesnt, create it 
+            
+                //checking if file exists, if it doesnt, create it Console.WriteLine("MainPage constructor called");Console.WriteLine("MainPage constructor called");
                 if (!File.Exists(localCache))
                 {
 
@@ -40,13 +39,23 @@ namespace Cross_Platform_Project
                     //stores everything here
                     json = File.ReadAllText(localCache);
                 }
+            movieList = JsonSerializer.Deserialize<List<Movies>>(json);
+           
+            ListOfMovies.ItemsSource = movieList;
+
+            
             }
-            //if something happend it will let me know
-            catch (Exception ex)
-            {
-                Console.WriteLine("ERROR, Problem detected", ex.Message);
-            }
-        }
+
+            
+        
+
+            
+            
+            
+
+
+
+        
         //method that helps me with searching
         private void Looking(object sender, TextChangedEventArgs e)
         {
@@ -54,10 +63,12 @@ namespace Cross_Platform_Project
             text = e.NewTextValue.ToUpper();
             if (String.IsNullOrEmpty(text))
             {
-
+                ListOfMovies.ItemsSource = movieList;
+                return;
             }
+            
         }
-        private void ListOfMovies_Tapped(object sender, EventArgs e)
+        private void ListOfMovies_Tapped(object sender, ItemTappedEventArgs e)
         {
 
         }
@@ -66,6 +77,8 @@ namespace Cross_Platform_Project
         public MainPage()
         {
             InitializeComponent();
+            
+            LoadMovies();
             
         }
 

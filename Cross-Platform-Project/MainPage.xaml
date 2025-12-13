@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cross_Platform_Project.MainPage">
 
-    <ScrollView>
+    
         <VerticalStackLayout>
             
             <SearchBar x:Name="SearchBox"
@@ -13,14 +13,15 @@
          <ListView x:Name="ListOfMovies" ItemTapped="ListOfMovies_Tapped">
          <ListView.ItemTemplate>
          <DataTemplate>
-                        <TextCell Text="{Binding director}"
-                         Detail="{Binding rating}" />
+             
+                        <TextCell Text="{Binding title}"
+                         Detail="{Binding GenreText}" />
                     
          </DataTemplate>
          </ListView.ItemTemplate>
          </ListView>
 
         </VerticalStackLayout>
-    </ScrollView>
+    
 
 </ContentPage>

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
+using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace MauiApp1
+namespace Cross_Platform_Project
 {
     public class Movies
     {
@@ -15,14 +16,17 @@ namespace MauiApp1
         [JsonPropertyName("year")]
         public int year { get; set; }
         [JsonPropertyName("genre")]
-        public string genre { get; set; }
+        public List<string> genre { get; set; }
         [JsonPropertyName("director")]
         public string director { get; set; }
         [JsonPropertyName("rating")]
         public double rating { get; set; }
         [JsonPropertyName("emoji")]
         public string emoji { get; set; }
-  
+
+        //genre has problem loading properly, so its helping the data to show properly, only genre had this problem, because it is an array
+        [JsonIgnore]
+        public string GenreText => string.Join(", ", genre);
     }
 
 }
