@@ -27,6 +27,10 @@ namespace Cross_Platform_Project
         //genre has problem loading properly, so its helping the data to show properly, only genre had this problem, because it is an array
         [JsonIgnore]
         public string GenreText => string.Join(", ", genre);
+
+        [JsonIgnore]
+        //id for history feature, so I could keep track of the movies and work with them
+        public string Id => $"{title}_{year}";
     }
 
 }

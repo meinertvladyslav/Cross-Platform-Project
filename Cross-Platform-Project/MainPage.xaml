@@ -4,9 +4,14 @@
              x:Class="Cross_Platform_Project.MainPage">
 
     
-        <VerticalStackLayout>
-            
-            <SearchBar x:Name="SearchBox"
+    
+    
+    <VerticalStackLayout
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        WidthRequest="350">
+
+        <SearchBar x:Name="SearchBox"
                            Placeholder="Search here "
                            TextChanged="Looking"/>
         
