@@ -21,9 +21,11 @@ namespace Cross_Platform_Project
         List<Movies> movieList = new List<Movies>();
         List<Movies> search = new List<Movies>();
         List<Movies> historyMovies = new();
+        List<Movies> favoriteMovies = new();
         //helps with downloading file
         HttpClient client = new HttpClient();
-
+        
+        
 
         private async Task LoadMovies()
         {
@@ -91,6 +93,23 @@ namespace Cross_Platform_Project
         {
             if (File.Exists(historyPath))
                 historyMovies = JsonSerializer.Deserialize<List<Movies>>(File.ReadAllText(historyPath));
+        }
+
+        void ColorChange(object sender, EventArgs e)
+        {
+            if (Application.Current.UserAppTheme == AppTheme.Dark)
+                Application.Current.UserAppTheme = AppTheme.Light;
+            else
+                Application.Current.UserAppTheme = AppTheme.Dark;
+        }
+        async void OpenHistory(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HistoryPage(historyMovies));
+        }
+
+        async void OpenFavorites(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FavoritesPage(favoriteMovies));
         }
 
         public MainPage()

@@ -31,6 +31,9 @@ namespace Cross_Platform_Project
         [JsonIgnore]
         //id for history feature, so I could keep track of the movies and work with them
         public string Id => $"{title}_{year}";
+
+        [JsonIgnore]
+        public bool favorite { get; set; }
     }
 
 }
