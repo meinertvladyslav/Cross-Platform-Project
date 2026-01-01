@@ -24,7 +24,6 @@
 
             <VerticalStackLayout
         HorizontalOptions="Center"
-        VerticalOptions="Center"
         WidthRequest="350">
 
         <SearchBar x:Name="SearchBox"

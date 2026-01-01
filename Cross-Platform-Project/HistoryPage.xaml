@@ -2,16 +2,23 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Cross_Platform_Project.HistoryPage"
-    Title="">
+    Title=""
+    BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
 
-    <ListView x:Name="HistoryList">
+
+    <VerticalStackLayout HorizontalOptions="Center"
+
+WidthRequest="350">
+        <ListView x:Name="HistoryList">
         <ListView.ItemTemplate>
             <DataTemplate>
              <TextCell
               Text="{Binding title}"
-              Detail="{Binding GenreText}" />
+              Detail="{Binding GenreText}" 
+                 TextColor="{AppThemeBinding Light=Black, Dark=White}"
+                 DetailColor="{AppThemeBinding Light=Black, Dark=White}"/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
+        </VerticalStackLayout>
 </ContentPage>

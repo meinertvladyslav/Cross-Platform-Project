@@ -3,15 +3,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Cross_Platform_Project.FavoritesPage"
     Title="">
-
-    <ListView x:Name="FavoritesList">
+    <VerticalStackLayout
+        HorizontalOptions="Center"
+        WidthRequest="350">
+        <ListView x:Name="FavoritesList">
         <ListView.ItemTemplate>
             <DataTemplate>
              <TextCell
               Text="{Binding title}"
-              Detail="{Binding GenreText}" />
+              Detail="{Binding GenreText}" 
+                 TextColor="{AppThemeBinding Light=Black, Dark=White}"
+                    DetailColor="{AppThemeBinding Light=Black, Dark=White}"/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
+        </VerticalStackLayout>
 </ContentPage>

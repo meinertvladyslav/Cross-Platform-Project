@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\historypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\historypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\favoritepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\favoritepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\favoritepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\favoritepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\MainPage.xaml.cs",
               "RelativeToolTip": "Cross-Platform-Project\\MainPage.xaml.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAwwGgAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowGIAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T16:06:08.159Z",
               "IsPinned": true,
@@ -60,13 +60,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\MainPage.xaml",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\MainPage.xaml",
               "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\MainPage.xaml",
               "RelativeToolTip": "Cross-Platform-Project\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-06T16:06:08.839Z",
               "IsPinned": true,
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "HistoryPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\HistoryPage.xaml.cs",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\HistoryPage.xaml.cs",
@@ -87,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FavoritePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml.cs",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\FavoritePage.xaml.cs",
@@ -100,33 +100,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "FavoritePage.xaml",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\FavoritePage.xaml",
-              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml*",
-              "RelativeToolTip": "Cross-Platform-Project\\FavoritePage.xaml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml",
+              "RelativeToolTip": "Cross-Platform-Project\\FavoritePage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-30T13:19:58.582Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "HistoryPage.xaml",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\HistoryPage.xaml",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\HistoryPage.xaml",
               "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\HistoryPage.xaml",
               "RelativeToolTip": "Cross-Platform-Project\\HistoryPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-30T13:19:40.241Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\App.xaml",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\App.xaml",
@@ -134,8 +134,7 @@
               "RelativeToolTip": "Cross-Platform-Project\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-25T11:47:09.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-25T11:47:09.566Z"
             },
             {
               "$type": "Document",
@@ -147,8 +146,7 @@
               "RelativeToolTip": "Cross-Platform-Project\\movies.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T12:27:31.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T12:27:31.035Z"
             }
           ]
         }

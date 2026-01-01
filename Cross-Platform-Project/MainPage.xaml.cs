@@ -81,6 +81,7 @@ namespace Cross_Platform_Project
             if (e.Item is Movies movie)
             {
                 AddToHistory(movie);
+                ClickedFavorite(movie);
             }
         }
 
@@ -95,6 +96,7 @@ namespace Cross_Platform_Project
                 historyMovies = JsonSerializer.Deserialize<List<Movies>>(File.ReadAllText(historyPath));
         }
 
+        //Using AppThere changing colors from light to dark mode, white/dark
         void ColorChange(object sender, EventArgs e)
         {
             if (Application.Current.UserAppTheme == AppTheme.Dark)
@@ -111,6 +113,22 @@ namespace Cross_Platform_Project
         {
             await Navigation.PushAsync(new FavoritesPage(favoriteMovies));
         }
+
+        void ClickedFavorite(Movies movie)
+        {
+            movie.favorite = !movie.favorite;
+
+            if (movie.favorite)
+            {
+                if (!favoriteMovies.Any(m => m.Id == movie.Id))
+                    favoriteMovies.Add(movie);
+            }
+            else
+            {
+                favoriteMovies.RemoveAll(m => m.Id == movie.Id);
+            }
+        }
+
 
         public MainPage()
         {

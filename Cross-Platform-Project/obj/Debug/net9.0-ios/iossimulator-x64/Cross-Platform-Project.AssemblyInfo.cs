@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cross-Platform-Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+68718eb810c7260de2e11f20f6ff327d2ae02e68")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f7cf5fcb1fc235a4064f5193bd1bda079ccfb4e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cross-Platform-Project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cross-Platform-Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
