@@ -1,24 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Cross_Platform_Project.HistoryPage"
-    Title=""
+    Title="History"
     BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
 
+    <VerticalStackLayout Padding="10">
 
-    <VerticalStackLayout HorizontalOptions="Center"
+        <ListView
+            x:Name="HistoryList"
+            BackgroundColor="Transparent"
+            SeparatorVisibility="Default">
 
-WidthRequest="350">
-        <ListView x:Name="HistoryList">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-             <TextCell
-              Text="{Binding title}"
-              Detail="{Binding GenreText}" 
-                 TextColor="{AppThemeBinding Light=Black, Dark=White}"
-                 DetailColor="{AppThemeBinding Light=Black, Dark=White}"/>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
-        </VerticalStackLayout>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+
+                            <Label Text="{Binding title}"
+                                   FontAttributes="Bold"
+                                   TextColor="{AppThemeBinding Light=Black, Dark=White}" />
+
+                            <Label Text="{Binding GenreText}"
+                                   FontSize="12"
+                                   TextColor="{AppThemeBinding Light=Black, Dark=White}" />
+
+                            <Label Text="{Binding year}"
+                                   FontSize="12"
+                                   TextColor="{AppThemeBinding Light=Black, Dark=White}" />
+
+                            <Label Text="{Binding emoji}"
+                                   FontSize="20" />
+
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+    </VerticalStackLayout>
+
 </ContentPage>
+    

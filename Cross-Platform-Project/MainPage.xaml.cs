@@ -61,11 +61,13 @@ namespace Cross_Platform_Project
             }
 
             //looking for values and making them to upper, so its wouldnt be case sensetive, "m" in this case is the movie that will be writen in the search bar
-            search = movieList.Where(m => m.title.ToUpper().Contains(text) || m.director.ToUpper().Contains(text) || m.GenreText.ToUpper().Contains(text) ||m.year.ToString().Contains(text)).ToList();
+
+            search = movieList.Where(m => m.title.ToUpper().Contains(text) || m.director.ToUpper().Contains(text) || m.GenreText.ToUpper().Contains(text) ||m.year.ToString().Contains(text) || m.rating.ToString().Contains(text) ).ToList();
 
             ListOfMovies.ItemsSource = search;
-
+        
         }
+
         //keeps 1 movie only once, so its deletes duplicates and limits history for 20 movies
         void AddToHistory(Movies movie)
         {
@@ -75,16 +77,53 @@ namespace Cross_Platform_Project
             if (historyMovies.Count > 20)
                 historyMovies.RemoveAt(historyMovies.Count - 1);
         }
-        
-        private void ListOfMovies_Tapped(object sender, ItemTappedEventArgs e)
+
+        void ListOfMovies_Tapped(object sender, EventArgs e)
         {
-            if (e.Item is Movies movie)
+            if (sender is Grid grid &&
+        grid.BindingContext is Movies movie)
             {
-                AddToHistory(movie);
-                ClickedFavorite(movie);
+                AddToHistory(movie);   
             }
         }
+        void Favorite(Movies movie)
+        {
+            if (movie.favorite)
+            {
+                movie.favorite = false;
+                favoriteMovies.RemoveAll(m => m.Id == movie.Id);
+            }
+            else
+            {
+                movie.favorite = true;
 
+                if (!favoriteMovies.Any(m => m.Id == movie.Id))
+                    favoriteMovies.Add(movie);
+            }
+        }
+        async void FavoriteClicked(object sender, EventArgs e)
+        {
+            if (sender is Button button &&
+                button.BindingContext is Movies movie)
+            {
+                await button.RotateTo(360, 250);
+                button.Rotation = 0;
+
+                Favorite(movie);
+
+               
+                if (movie.favorite)
+                {
+                    button.Text = "★";
+                    button.TextColor = Colors.Gold;
+                }
+                else
+                {
+                    button.Text = "☆";
+                    button.TextColor = Colors.Gray;
+                }
+            }
+        }
         void SaveHistory()
         {
             File.WriteAllText(historyPath, JsonSerializer.Serialize(historyMovies));
@@ -104,6 +143,9 @@ namespace Cross_Platform_Project
             else
                 Application.Current.UserAppTheme = AppTheme.Dark;
         }
+
+        //Navigations from main page to history/favorite
+
         async void OpenHistory(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new HistoryPage(historyMovies));
@@ -113,21 +155,8 @@ namespace Cross_Platform_Project
         {
             await Navigation.PushAsync(new FavoritesPage(favoriteMovies));
         }
-
-        void ClickedFavorite(Movies movie)
-        {
-            movie.favorite = !movie.favorite;
-
-            if (movie.favorite)
-            {
-                if (!favoriteMovies.Any(m => m.Id == movie.Id))
-                    favoriteMovies.Add(movie);
-            }
-            else
-            {
-                favoriteMovies.RemoveAll(m => m.Id == movie.Id);
-            }
-        }
+        
+      
 
 
         public MainPage()

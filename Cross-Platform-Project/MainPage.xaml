@@ -5,13 +5,13 @@
              Title=""
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
 
-   
-
-        
+  
     
 
 
-    <ContentPage.MenuBarItems>
+
+
+        <ContentPage.MenuBarItems>
         <MenuBarItem x:Name="Menu" Text="Menu">
             <MenuFlyoutItem Text="History" Clicked="OpenHistory"/>
             <MenuFlyoutItem Text="Favorite" Clicked="OpenFavorites"/>
@@ -20,32 +20,61 @@
         </MenuBarItem>
                 
     </ContentPage.MenuBarItems>
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="Center"
+WidthRequest="350">
+        <SearchBar
+            x:Name="SearchBox"
+            Placeholder="Search movies here"
+            TextChanged="Looking"
+            TextColor="{AppThemeBinding Light=Black, Dark=White}"
+            PlaceholderColor="{AppThemeBinding Light=Black, Dark=White}" />
+        <CollectionView x:Name="ListOfMovies" SelectionMode="None">
 
+        
+            <CollectionView.ItemTemplate>
+            <DataTemplate>
+               
+                
+            
+        <Grid Padding="20" ColumnDefinitions="*,Auto">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer
+                    Tapped="ListOfMovies_Tapped" />
+                        </Grid.GestureRecognizers>
+                        <StackLayout>
+                           
+                            <Label Text="{Binding title}"
+                   FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=Black, Dark=White}" />
 
-            <VerticalStackLayout
-        HorizontalOptions="Center"
-        WidthRequest="350">
+        <Label Text="{Binding GenreText}"
+                   FontSize="12"
+                   TextColor="{AppThemeBinding Light=Black, Dark=White}" />
 
-        <SearchBar x:Name="SearchBox"
-                           Placeholder="Search here "
-                           TextChanged="Looking"
-                          
-                          TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+        <Label Text="{Binding year}"
+                   FontSize="12"
+                   TextColor="{AppThemeBinding Light=Black, Dark=White}" />
 
-        <ListView x:Name="ListOfMovies" ItemTapped="ListOfMovies_Tapped">
-         <ListView.ItemTemplate>
-         <DataTemplate>
-             
-                        <TextCell Text="{Binding title}"
-                         Detail="{Binding GenreText}" 
-                         TextColor="{AppThemeBinding Light=Black, Dark=White}"
-                         DetailColor="{AppThemeBinding Light=Black, Dark=White}"/>
-                    
-         </DataTemplate>
-         </ListView.ItemTemplate>
-         </ListView>
+        <Label Text="{Binding emoji}"
+                   FontSize="20" />
+    </StackLayout>
 
+                        <Button
+    Grid.Column="1"
+    Text="☆"
+    FontSize="24"
+    BackgroundColor="Transparent"
+    TextColor="Gray"
+    Clicked="FavoriteClicked">
+                        </Button>
+                            
+                </Grid>
+                        
+
+                </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
         </VerticalStackLayout>
-    
-
+        </ScrollView>
 </ContentPage>
