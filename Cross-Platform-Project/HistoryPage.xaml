@@ -5,7 +5,7 @@
     x:Class="Cross_Platform_Project.HistoryPage"
     Title="History"
     BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
-
+    <!-- Bassicaly smaller version with lesser functional than main page-->
     <VerticalStackLayout Padding="10">
 
         <ListView

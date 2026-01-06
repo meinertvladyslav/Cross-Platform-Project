@@ -3,26 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cross_Platform_Project.MainPage"
              Title=""
-             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
-
-  
+             
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">   <!-- changing colors of the page-->
     
-
-
-
-
+    <!--Start of the menu bar itself named "Menu" -->
         <ContentPage.MenuBarItems>
         <MenuBarItem x:Name="Menu" Text="Menu">
+            <!-- Items in the menu  and separator between them(line)-->
             <MenuFlyoutItem Text="History" Clicked="OpenHistory"/>
             <MenuFlyoutItem Text="Favorite" Clicked="OpenFavorites"/>
             <MenuFlyoutSeparator/>
             <MenuFlyoutItem x:Name="ColorModes" Text="Switch to dark mode" Clicked="ColorChange"/>
+            <MenuFlyoutItem Text="Accounts" Clicked="OpenAccounts"/>
+            <MenuFlyoutItem Text="Random Movie" Clicked="RandomMovieClicked"/>
         </MenuBarItem>
                 
     </ContentPage.MenuBarItems>
+    <!-- Allows to scroll and 600 pixels for movies and button-->
     <ScrollView>
         <VerticalStackLayout HorizontalOptions="Center"
-WidthRequest="350">
+            WidthRequest="600">
         <SearchBar
             x:Name="SearchBox"
             Placeholder="Search movies here"
@@ -43,8 +43,8 @@ WidthRequest="350">
                     Tapped="ListOfMovies_Tapped" />
                         </Grid.GestureRecognizers>
                         <StackLayout>
-                           
-                            <Label Text="{Binding title}"
+                                <!-- Showing movies details-->
+                                <Label Text="{Binding title}"
                    FontAttributes="Bold"
                    TextColor="{AppThemeBinding Light=Black, Dark=White}" />
 
@@ -59,17 +59,15 @@ WidthRequest="350">
         <Label Text="{Binding emoji}"
                    FontSize="20" />
     </StackLayout>
-
-                        <Button
+                            <!--Button for favorite feature -->
+                            <Button
     Grid.Column="1"
-    Text="☆"
     FontSize="24"
     BackgroundColor="Transparent"
-    TextColor="Gray"
-    Clicked="FavoriteClicked">
-                        </Button>
+    Clicked="FavoriteClicked"
+    Loaded="FavoriteLoaded"/>
                             
-                </Grid>
+                        </Grid>
                         
 
                 </DataTemplate>

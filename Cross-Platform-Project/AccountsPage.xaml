@@ -1,0 +1,35 @@
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Cross_Platform_Project.AccountsPage"
+    Title="Select Account">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <!-- Showing account for you to choose-->
+        <Label Text="Whos watching?"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <CollectionView
+            x:Name="AccountsView"
+            SelectionMode="Single"
+            SelectionChanged="AccountSelected">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="15" Margin="5">
+                        <Label Text="{Binding Name}"
+                               FontSize="18"
+                               HorizontalOptions="Center"/>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+        <Button Text="Add account"
+                Clicked="AddAccountClicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

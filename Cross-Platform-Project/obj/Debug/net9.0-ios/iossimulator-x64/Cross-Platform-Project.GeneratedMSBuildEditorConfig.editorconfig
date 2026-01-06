@@ -18,6 +18,12 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/vlady/OneDrive - Atlantic TU/Cross-Platform-Project/Cross-Platform-Project/AccountsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Cross_Platform_Project.AccountsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AccountsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AccountsPage.xaml
+
 [C:/Users/vlady/OneDrive - Atlantic TU/Cross-Platform-Project/Cross-Platform-Project/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Cross_Platform_Project.App.xaml

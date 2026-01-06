@@ -20,14 +20,20 @@ namespace Cross_Platform_Project
         //creating variable movie list with Movies class inside
         List<Movies> movieList = new List<Movies>();
         List<Movies> search = new List<Movies>();
-        List<Movies> historyMovies = new();
-        List<Movies> favoriteMovies = new();
+
+        bool IsFavorite(Movies movie)
+        {
+            return currentAccount.Favorites.Any(m => m.Id == movie.Id);
+        }
+
+        List<Account> accounts;
+        Account currentAccount;
         //helps with downloading file
         HttpClient client = new HttpClient();
         
         
 
-        private async Task LoadMovies()
+        private async void LoadMovies()
         {
 
             //checking if file exists, if it doesnt, create it Console.WriteLine("MainPage constructor called");Console.WriteLine("MainPage constructor called");
@@ -48,11 +54,31 @@ namespace Cross_Platform_Project
             ListOfMovies.ItemsSource = movieList;
 
         }
+        //function for random movie feature
+        async void ShowRandomMovie()
+        {
+           
+
+            var random = new Random();
+            var movie = movieList[random.Next(movieList.Count)];
+
+            await DisplayAlert(
+                "Random Movie",
+                $"{movie.emoji} {movie.title} {movie.year}\n\n" +
+                $"{movie.GenreText}",
+                "Nice!"
+            );
+
+        }
+        void RandomMovieClicked(object sender, EventArgs e)
+        {
+            ShowRandomMovie();
+        }
 
         //method that helps me with searching
         private void Looking(object sender, TextChangedEventArgs e)
         {
-            //making everything uppercase, so its wouldnt be case sensetive
+            //making everything uppercase, so its wouldnt be case sensetive, and showing all of the movies, if nothing is writen
             text = e.NewTextValue.ToUpper();
             if (String.IsNullOrEmpty(text))
             {
@@ -71,36 +97,56 @@ namespace Cross_Platform_Project
         //keeps 1 movie only once, so its deletes duplicates and limits history for 20 movies
         void AddToHistory(Movies movie)
         {
-            historyMovies.RemoveAll(m => m.Id == movie.Id);
-            historyMovies.Insert(0, movie);
+            if (currentAccount == null)
+                return;
 
-            if (historyMovies.Count > 20)
-                historyMovies.RemoveAt(historyMovies.Count - 1);
+            var history = currentAccount.History;
+
+            history.RemoveAll(m => m.Id == movie.Id);
+            history.Insert(0, movie);
+
+            if (history.Count > 20)
+                history.RemoveAt(history.Count - 1);
+
+            AccountStorage.SaveAccounts(accounts);
         }
-
-        void ListOfMovies_Tapped(object sender, EventArgs e)
+        //adding to history abd playing small animation
+       async void ListOfMovies_Tapped(object sender, EventArgs e)
         {
             if (sender is Grid grid &&
         grid.BindingContext is Movies movie)
             {
+                await grid.ScaleTo(0.9, 80);
+                await grid.ScaleTo(1.05, 100);
+                await grid.ScaleTo(1.0, 60);
+
                 AddToHistory(movie);   
             }
         }
+
+
+        //checking if there is already this movie was in favorite, if not, adds it
         void Favorite(Movies movie)
         {
-            if (movie.favorite)
+            if (currentAccount == null)
+                return;
+
+            var favorites = currentAccount.Favorites;
+
+            if (favorites.Any(m => m.Id == movie.Id))
             {
-                movie.favorite = false;
-                favoriteMovies.RemoveAll(m => m.Id == movie.Id);
+                favorites.RemoveAll(m => m.Id == movie.Id);
+               
             }
             else
             {
-                movie.favorite = true;
-
-                if (!favoriteMovies.Any(m => m.Id == movie.Id))
-                    favoriteMovies.Add(movie);
+                favorites.Add(movie);
+                
             }
+
+            AccountStorage.SaveAccounts(accounts);
         }
+        //animation for the star button
         async void FavoriteClicked(object sender, EventArgs e)
         {
             if (sender is Button button &&
@@ -109,10 +155,31 @@ namespace Cross_Platform_Project
                 await button.RotateTo(360, 250);
                 button.Rotation = 0;
 
-                Favorite(movie);
+                var favorites = currentAccount.Favorites;
 
-               
-                if (movie.favorite)
+                if (favorites.Any(m => m.Id == movie.Id))
+                {
+                    favorites.RemoveAll(m => m.Id == movie.Id);
+                    button.Text = "☆";
+                    button.TextColor = Colors.Gray;
+                }
+                else
+                {
+                    favorites.Add(movie);
+                    button.Text = "★";
+                    button.TextColor = Colors.Gold;
+                }
+
+                AccountStorage.SaveAccounts(accounts);
+            }
+        }
+        //favorite movies is different for each account, so its making it not general for every account
+        void FavoriteLoaded(object sender, EventArgs e)
+        {
+            if (sender is Button button &&
+                button.BindingContext is Movies movie)
+            {
+                if (IsFavorite(movie))
                 {
                     button.Text = "★";
                     button.TextColor = Colors.Gold;
@@ -124,17 +191,53 @@ namespace Cross_Platform_Project
                 }
             }
         }
-        void SaveHistory()
+        //loading accounts, and auto-selected first account is guest
+        void LoadAccounts()
         {
-            File.WriteAllText(historyPath, JsonSerializer.Serialize(historyMovies));
-        }
+            accounts = AccountStorage.LoadAccounts();
 
-        void LoadHistory()
+            if (accounts.Count == 0)
+            {
+                currentAccount = new Account { Name = "Guest" };
+                accounts.Add(currentAccount);
+                AccountStorage.SaveAccounts(accounts);
+            }
+            else
+            {
+                currentAccount = accounts[0]; 
+            }
+
+            Title = $"Welcome, {currentAccount.Name}";
+        }
+        //creates account
+        async void CreateAccount()
         {
-            if (File.Exists(historyPath))
-                historyMovies = JsonSerializer.Deserialize<List<Movies>>(File.ReadAllText(historyPath));
-        }
+            string name = await DisplayPromptAsync(
+                "Create account",
+                "Enter account name");
 
+            if (string.IsNullOrWhiteSpace(name))
+                return;
+
+            currentAccount = new Account { Name = name };
+            accounts.Add(currentAccount);
+
+            AccountStorage.SaveAccounts(accounts);
+        }
+        //opens and refresing accounts
+        async void OpenAccounts(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(
+                new AccountsPage(accounts, account =>
+                {
+                    currentAccount = account;
+                    Title = $"Welcome, {account.Name}";
+
+                    
+                    ListOfMovies.ItemsSource = null;
+                    ListOfMovies.ItemsSource = movieList;
+                }));
+        }
         //Using AppThere changing colors from light to dark mode, white/dark
         void ColorChange(object sender, EventArgs e)
         {
@@ -148,22 +251,25 @@ namespace Cross_Platform_Project
 
         async void OpenHistory(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new HistoryPage(historyMovies));
+            await Navigation.PushAsync(
+                new HistoryPage(currentAccount.History));
         }
 
         async void OpenFavorites(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FavoritesPage(favoriteMovies));
+            await Navigation.PushAsync(
+                new FavoritesPage(currentAccount.Favorites));
         }
-        
-      
 
 
+
+        //loading account before movies, so it would show information like history and favorite properly for each account
         public MainPage()
         {
             InitializeComponent();
-            
+            LoadAccounts();
             LoadMovies();
+
             
         }
 

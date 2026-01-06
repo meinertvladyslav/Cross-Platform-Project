@@ -1,22 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Cross_Platform_Project.FavoritesPage"
-    Title="">
-    <VerticalStackLayout
-        HorizontalOptions="Center"
-        WidthRequest="350">
-        <ListView x:Name="FavoritesList">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-             <TextCell
-              Text="{Binding title}"
-              Detail="{Binding GenreText}" 
-                 TextColor="{AppThemeBinding Light=Black, Dark=White}"
-                    DetailColor="{AppThemeBinding Light=Black, Dark=White}"/>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
-        </VerticalStackLayout>
-    
+    Title="Favorite"
+    BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+    <!-- Bassicaly smaller version with lesser functional than main page-->
+        <VerticalStackLayout Padding="10">
+
+        <ListView
+            x:Name="FavoritesList"
+            BackgroundColor="Transparent"
+            SeparatorVisibility="Default">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                        
+                            <Label Text="{Binding title}"
+                                   FontAttributes="Bold"
+                                   TextColor="{AppThemeBinding Light=Black, Dark=White}" />
+
+                            <Label Text="{Binding GenreText}"
+                                   FontSize="12"
+                                   TextColor="{AppThemeBinding Light=Black, Dark=White}" />
+
+                            <Label Text="{Binding year}"
+                                   FontSize="12"
+                                   TextColor="{AppThemeBinding Light=Black, Dark=White}" />
+
+                            <Label Text="{Binding emoji}"
+                                   FontSize="20" />
+
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+    </VerticalStackLayout>
+
 </ContentPage>
