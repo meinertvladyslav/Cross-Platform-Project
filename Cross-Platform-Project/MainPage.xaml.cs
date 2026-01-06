@@ -7,8 +7,21 @@ using System.Threading.Tasks;
 
 namespace Cross_Platform_Project
 {
+    [QueryProperty(nameof(SelectedAccount), "selectedAccount")]
     public partial class MainPage : ContentPage
     {
+        Account SelectedAccount
+        {
+            set
+            {
+                AppState.CurrentAccount = value;
+                Title = $"Welcome, {AppState.CurrentAccount.Name}";
+
+                ListOfMovies.ItemsSource = null;
+                ListOfMovies.ItemsSource = movieList;
+            }
+        }
+
         //url to database
         string url = "https://raw.githubusercontent.com/DonH-ITS/jsonfiles/refs/heads/main/moviesemoji.json";
         //Local cache will be saved here
@@ -23,11 +36,10 @@ namespace Cross_Platform_Project
 
         bool IsFavorite(Movies movie)
         {
-            return currentAccount.Favorites.Any(m => m.Id == movie.Id);
+            return AppState.CurrentAccount.Favorite.Any(m => m.Id == movie.Id);
         }
 
-        List<Account> accounts;
-        Account currentAccount;
+        
         //helps with downloading file
         HttpClient client = new HttpClient();
         
@@ -97,10 +109,7 @@ namespace Cross_Platform_Project
         //keeps 1 movie only once, so its deletes duplicates and limits history for 20 movies
         void AddToHistory(Movies movie)
         {
-            if (currentAccount == null)
-                return;
-
-            var history = currentAccount.History;
+            var history = AppState.CurrentAccount.History;
 
             history.RemoveAll(m => m.Id == movie.Id);
             history.Insert(0, movie);
@@ -108,10 +117,10 @@ namespace Cross_Platform_Project
             if (history.Count > 20)
                 history.RemoveAt(history.Count - 1);
 
-            AccountStorage.SaveAccounts(accounts);
+            AccountStorage.SaveAccounts(AppState.Accounts);
         }
         //adding to history abd playing small animation
-       async void ListOfMovies_Tapped(object sender, EventArgs e)
+        async void ListOfMovies_Tapped(object sender, EventArgs e)
         {
             if (sender is Grid grid &&
         grid.BindingContext is Movies movie)
@@ -128,23 +137,14 @@ namespace Cross_Platform_Project
         //checking if there is already this movie was in favorite, if not, adds it
         void Favorite(Movies movie)
         {
-            if (currentAccount == null)
-                return;
+            var favorite = AppState.CurrentAccount.Favorite;
 
-            var favorites = currentAccount.Favorites;
-
-            if (favorites.Any(m => m.Id == movie.Id))
-            {
-                favorites.RemoveAll(m => m.Id == movie.Id);
-               
-            }
+            if (favorite.Any(m => m.Id == movie.Id))
+                favorite.RemoveAll(m => m.Id == movie.Id);
             else
-            {
-                favorites.Add(movie);
-                
-            }
+                favorite.Add(movie);
 
-            AccountStorage.SaveAccounts(accounts);
+            AccountStorage.SaveAccounts(AppState.Accounts);
         }
         //animation for the star button
         async void FavoriteClicked(object sender, EventArgs e)
@@ -155,22 +155,22 @@ namespace Cross_Platform_Project
                 await button.RotateTo(360, 250);
                 button.Rotation = 0;
 
-                var favorites = currentAccount.Favorites;
+                var favorite = AppState.CurrentAccount.Favorite;
 
-                if (favorites.Any(m => m.Id == movie.Id))
+                if (favorite.Any(m => m.Id == movie.Id))
                 {
-                    favorites.RemoveAll(m => m.Id == movie.Id);
+                    favorite.RemoveAll(m => m.Id == movie.Id);
                     button.Text = "☆";
                     button.TextColor = Colors.Gray;
                 }
                 else
                 {
-                    favorites.Add(movie);
+                    favorite.Add(movie);
                     button.Text = "★";
                     button.TextColor = Colors.Gold;
                 }
 
-                AccountStorage.SaveAccounts(accounts);
+                AccountStorage.SaveAccounts(AppState.Accounts);
             }
         }
         //favorite movies is different for each account, so its making it not general for every account
@@ -192,24 +192,24 @@ namespace Cross_Platform_Project
             }
         }
         //loading accounts, and auto-selected first account is guest
-        void LoadAccounts()
+     /*   void LoadAccounts()
         {
-            accounts = AccountStorage.LoadAccounts();
+            AppState.Accounts = AccountStorage.LoadAccounts();
 
-            if (accounts.Count == 0)
+            if (AppState.Accounts.Count == 0)
             {
-                currentAccount = new Account { Name = "Guest" };
-                accounts.Add(currentAccount);
-                AccountStorage.SaveAccounts(accounts);
+                AppState.CurrentAccount = new Account { Name = "Guest" };
+                AppState.Accounts.Add(AppState.CurrentAccount);
+                AccountStorage.SaveAccounts(AppState.Accounts);
             }
             else
             {
-                currentAccount = accounts[0]; 
+                AppState.CurrentAccount = AppState.Accounts[0]; 
             }
 
-            Title = $"Welcome, {currentAccount.Name}";
+            Title = $"Welcome, {AppState.CurrentAccount.Name}";
         }
-        //creates account
+       */ //creates account
         async void CreateAccount()
         {
             string name = await DisplayPromptAsync(
@@ -219,25 +219,13 @@ namespace Cross_Platform_Project
             if (string.IsNullOrWhiteSpace(name))
                 return;
 
-            currentAccount = new Account { Name = name };
-            accounts.Add(currentAccount);
+            AppState.CurrentAccount = new Account { Name = name };
+            AppState.Accounts.Add(AppState.CurrentAccount);
 
-            AccountStorage.SaveAccounts(accounts);
+            AccountStorage.SaveAccounts(AppState.Accounts);
         }
         //opens and refresing accounts
-        async void OpenAccounts(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(
-                new AccountsPage(accounts, account =>
-                {
-                    currentAccount = account;
-                    Title = $"Welcome, {account.Name}";
 
-                    
-                    ListOfMovies.ItemsSource = null;
-                    ListOfMovies.ItemsSource = movieList;
-                }));
-        }
         //Using AppThere changing colors from light to dark mode, white/dark
         void ColorChange(object sender, EventArgs e)
         {
@@ -251,26 +239,55 @@ namespace Cross_Platform_Project
 
         async void OpenHistory(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(
-                new HistoryPage(currentAccount.History));
+            await Shell.Current.GoToAsync(nameof(HistoryPage));
         }
 
-        async void OpenFavorites(object sender, EventArgs e)
+        async void OpenFavorite(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(
-                new FavoritesPage(currentAccount.Favorites));
+            await Shell.Current.GoToAsync(nameof(FavoritePage));
+        }
+
+        async void OpenAccounts(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(AccountsPage));
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (AppState.CurrentAccount != null)
+            {
+                Title = $"Welcome, {AppState.CurrentAccount.Name}";
+                ListOfMovies.ItemsSource = null;
+                ListOfMovies.ItemsSource = movieList;
+            }
         }
 
 
-
-        //loading account before movies, so it would show information like history and favorite properly for each account
         public MainPage()
         {
             InitializeComponent();
-            LoadAccounts();
-            LoadMovies();
+            if (AppState.Accounts.Count == 0)
+            {
+                AppState.Accounts = AccountStorage.LoadAccounts();
 
+                if (AppState.Accounts.Count == 0)
+                {
+                    AppState.CurrentAccount = new Account { Name = "Guest" };
+                    AppState.Accounts.Add(AppState.CurrentAccount);
+                    AccountStorage.SaveAccounts(AppState.Accounts);
+                }
+                else
+                {
+                    AppState.CurrentAccount = AppState.Accounts[0];
+                }
+            }
+
+            Title = $"Welcome, {AppState.CurrentAccount.Name}";
+            LoadMovies();
             
+
         }
 
        

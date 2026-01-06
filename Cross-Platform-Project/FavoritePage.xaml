@@ -2,7 +2,7 @@
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="Cross_Platform_Project.FavoritesPage"
+    x:Class="Cross_Platform_Project.FavoritePage"
     Title="Favorite"
     BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
     <!-- Bassicaly smaller version with lesser functional than main page-->

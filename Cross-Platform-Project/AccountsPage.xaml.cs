@@ -3,47 +3,55 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
 namespace Cross_Platform_Project;
 
 public partial class AccountsPage : ContentPage
 {
-    List<Account> accounts;
-    Action<Account> onSelected;
-
-    public AccountsPage(List<Account> accounts, Action<Account> onSelected)
+    public AccountsPage()
     {
         InitializeComponent();
-        this.accounts = accounts;
-        this.onSelected = onSelected;
+        Accounts.Clear();
+        foreach (var acc in AppState.Accounts)
+            Accounts.Add(acc);
 
-        AccountsView.ItemsSource = accounts;
+        BindingContext = this;
     }
 
-    void AccountSelected(object sender, SelectionChangedEventArgs e)
+    public ObservableCollection<Account> Accounts { get; }
+    = new ObservableCollection<Account>();
+
+    async void OnAccountSelected(object sender, SelectionChangedEventArgs e)
     {
-        if (e.CurrentSelection.FirstOrDefault() is Account account)
+        if (e.CurrentSelection.FirstOrDefault() is Account selected)
         {
-            onSelected(account);     
-            Navigation.PopAsync();   
+            AppState.CurrentAccount = selected;
+            AccountStorage.SaveAccounts(AppState.Accounts);
+            await Shell.Current.GoToAsync("..");
         }
     }
 
-    async void AddAccountClicked(object sender, EventArgs e)
+    async void CreateAccountClicked(object sender, EventArgs e)
     {
-        string name = await DisplayPromptAsync(
-            "New account",
-            "Enter account name");
-
-        if (string.IsNullOrWhiteSpace(name))
-            return;
+        string name = await DisplayPromptAsync("Create account", "Enter name");
+        if (string.IsNullOrWhiteSpace(name)) return;
 
         var account = new Account { Name = name };
-        accounts.Add(account);
 
-        AccountStorage.SaveAccounts(accounts);
+        
+        AppState.Accounts.Add(account);
 
-        AccountsView.ItemsSource = null;
-        AccountsView.ItemsSource = accounts;
+       
+        Accounts.Add(account);
+
+       
+        AppState.CurrentAccount = account;
+
+        
+        AccountStorage.SaveAccounts(AppState.Accounts);
+
+        
+        await Shell.Current.GoToAsync("..");
     }
 }

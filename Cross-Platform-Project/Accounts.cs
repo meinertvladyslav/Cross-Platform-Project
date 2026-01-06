@@ -8,9 +8,9 @@ namespace Cross_Platform_Project
 {
     public class Account
     {
-        //account have their own history and favorites
+        //account have their own history and favorite
         public string Name { get; set; }
         public List<Movies> History { get; set; } = new();
-        public List<Movies> Favorites { get; set; } = new();
+        public List<Movies> Favorite { get; set; } = new();
     }
 }

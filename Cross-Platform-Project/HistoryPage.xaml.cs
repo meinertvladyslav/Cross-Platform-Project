@@ -3,15 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
-namespace Cross_Platform_Project
+namespace Cross_Platform_Project;
+
+public partial class HistoryPage : ContentPage
 {
-    public partial class HistoryPage : ContentPage
+    public HistoryPage()
     {
-        public HistoryPage(List<Movies> history)
+        InitializeComponent();
+    }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        if (AppState.CurrentAccount != null)
         {
-            InitializeComponent();
-            HistoryList.ItemsSource = history;
+            HistoryList.ItemsSource = null;
+            HistoryList.ItemsSource = AppState.CurrentAccount.History;
         }
     }
 }

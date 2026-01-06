@@ -2,27 +2,22 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cross_Platform_Project.MainPage"
-             Title=""
-             
-             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">   <!-- changing colors of the page-->
-    
-    <!--Start of the menu bar itself named "Menu" -->
-        <ContentPage.MenuBarItems>
-        <MenuBarItem x:Name="Menu" Text="Menu">
-            <!-- Items in the menu  and separator between them(line)-->
-            <MenuFlyoutItem Text="History" Clicked="OpenHistory"/>
-            <MenuFlyoutItem Text="Favorite" Clicked="OpenFavorites"/>
-            <MenuFlyoutSeparator/>
-            <MenuFlyoutItem x:Name="ColorModes" Text="Switch to dark mode" Clicked="ColorChange"/>
-            <MenuFlyoutItem Text="Accounts" Clicked="OpenAccounts"/>
-            <MenuFlyoutItem Text="Random Movie" Clicked="RandomMovieClicked"/>
-        </MenuBarItem>
-                
-    </ContentPage.MenuBarItems>
-    <!-- Allows to scroll and 600 pixels for movies and button-->
+             Title="Movies"
+             Shell.NavBarIsVisible="True"
+             Padding="10,40,10,10"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+    <!-- changing colors of the page-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="History" Clicked="OpenHistory"/>
+        <ToolbarItem Text="Favorites" Clicked="OpenFavorite"/>
+        <ToolbarItem Text="Accounts" Clicked="OpenAccounts"/>
+        <ToolbarItem Text="Random" Clicked="RandomMovieClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <!-- Allows to scroll and 400 pixels for movies and button-->
     <ScrollView>
         <VerticalStackLayout HorizontalOptions="Center"
-            WidthRequest="600">
+            WidthRequest="400">
         <SearchBar
             x:Name="SearchBox"
             Placeholder="Search movies here"

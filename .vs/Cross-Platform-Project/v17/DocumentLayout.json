@@ -3,48 +3,92 @@
   "WorkspaceRootPath": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\favoritepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\favoritepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\favoritepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\favoritepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\historypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\historypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\accountstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\accountstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\accountspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\accountspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\appstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\appstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.78\\tools\\Xamarin.Android.Common.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\accountspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\accountspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\accountstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\accountstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\favoritepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\favoritepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\favoritepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\favoritepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\historypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\historypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\historypage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\historypage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vlady\\AppData\\Local\\Temp\\VSGeneratedDocuments\\5878a547-f6c5-933f-0c2f-5adb5ad83b3b\\FavoritePage.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vlady\\AppData\\Local\\Temp\\VSGeneratedDocuments\\ae0b35c8-f65a-639d-b52a-9787ea6496a8\\FavoritePage.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vlady\\AppData\\Local\\Temp\\VSGeneratedDocuments\\e53b32d7-ced4-aac0-2958-e97c753c7ca8\\FavoritePage.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\favoritepage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\favoritepage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\accountspage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\accountspage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|c:\\users\\vlady\\onedrive - atlantic tu\\cross-platform-project\\cross-platform-project\\movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20C92194-DF57-42D7-A0A2-F001FFD93AEE}|Cross-Platform-Project\\Cross-Platform-Project.csproj|solutionrelative:cross-platform-project\\movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,17 +98,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\MainPage.xaml.cs",
               "RelativeToolTip": "Cross-Platform-Project\\MainPage.xaml.cs",
-              "ViewState": "AgIAAOsAAAAAAAAAAAAUwAkBAAB5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T16:06:08.159Z",
               "IsPinned": true,
@@ -72,17 +116,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\MainPage.xaml",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\MainPage.xaml",
               "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\MainPage.xaml",
               "RelativeToolTip": "Cross-Platform-Project\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-06T16:06:08.839Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -90,94 +133,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "AppState.cs",
+              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AppState.cs",
+              "RelativeDocumentMoniker": "Cross-Platform-Project\\AppState.cs",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AppState.cs",
+              "RelativeToolTip": "Cross-Platform-Project\\AppState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T19:41:14.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "Cross-Platform-Project\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AppShell.xaml.cs",
+              "RelativeToolTip": "Cross-Platform-Project\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T18:37:27.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AppShell.xaml",
+              "RelativeDocumentMoniker": "Cross-Platform-Project\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AppShell.xaml",
+              "RelativeToolTip": "Cross-Platform-Project\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-06T18:37:24.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Cross-Platform-Project\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\App.xaml.cs",
+              "RelativeToolTip": "Cross-Platform-Project\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T18:32:08.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\App.xaml",
+              "RelativeDocumentMoniker": "Cross-Platform-Project\\App.xaml",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\App.xaml",
+              "RelativeToolTip": "Cross-Platform-Project\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-06T18:27:48.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Accounts.cs",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\Accounts.cs",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\Accounts.cs",
               "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\Accounts.cs",
               "RelativeToolTip": "Cross-Platform-Project\\Accounts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T18:22:39.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-03T18:22:39.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "AccountsPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AccountsPage.xaml.cs",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\AccountsPage.xaml.cs",
               "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AccountsPage.xaml.cs",
               "RelativeToolTip": "Cross-Platform-Project\\AccountsPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T18:20:24.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-03T18:20:24.032Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "AccountsPage.xaml",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AccountsPage.xaml",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\AccountsPage.xaml",
               "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AccountsPage.xaml",
               "RelativeToolTip": "Cross-Platform-Project\\AccountsPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-03T18:19:43.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-06T19:24:33.462Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AccountStorage.cs",
-              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AccountStorage.cs",
-              "RelativeDocumentMoniker": "Cross-Platform-Project\\AccountStorage.cs",
-              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AccountStorage.cs",
-              "RelativeToolTip": "Cross-Platform-Project\\AccountStorage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T18:14:54.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HistoryPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\HistoryPage.xaml.cs",
-              "RelativeDocumentMoniker": "Cross-Platform-Project\\HistoryPage.xaml.cs",
-              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\HistoryPage.xaml.cs",
-              "RelativeToolTip": "Cross-Platform-Project\\HistoryPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T13:23:53.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FavoritePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml.cs",
-              "RelativeDocumentMoniker": "Cross-Platform-Project\\FavoritePage.xaml.cs",
-              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml.cs",
-              "RelativeToolTip": "Cross-Platform-Project\\FavoritePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T13:23:34.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FavoritePage.xaml",
-              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml",
-              "RelativeDocumentMoniker": "Cross-Platform-Project\\FavoritePage.xaml",
-              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml",
-              "RelativeToolTip": "Cross-Platform-Project\\FavoritePage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-30T13:19:58.582Z",
-              "EditorCaption": ""
+              "Title": "Xamarin.Android.Common.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.78\\tools\\Xamarin.Android.Common.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.78\\tools\\Xamarin.Android.Common.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.78\\tools\\Xamarin.Android.Common.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.78\\tools\\Xamarin.Android.Common.targets",
+              "ViewState": "AgIAAEEKAAAAAAAAAAAAwFsKAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-01-06T20:47:11.053Z"
             },
             {
               "$type": "Document",
@@ -187,23 +247,140 @@
               "RelativeDocumentMoniker": "Cross-Platform-Project\\HistoryPage.xaml",
               "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\HistoryPage.xaml",
               "RelativeToolTip": "Cross-Platform-Project\\HistoryPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-30T13:19:40.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-06T20:05:11.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
+              "Title": "HistoryPage.xaml",
+              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\HistoryPage.xaml",
+              "RelativeDocumentMoniker": "Cross-Platform-Project\\HistoryPage.xaml",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\HistoryPage.xaml",
+              "RelativeToolTip": "Cross-Platform-Project\\HistoryPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-06T20:04:23.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FavoritePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml.cs",
+              "RelativeDocumentMoniker": "Cross-Platform-Project\\FavoritePage.xaml.cs",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml.cs",
+              "RelativeToolTip": "Cross-Platform-Project\\FavoritePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T13:23:34.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountStorage.cs",
+              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AccountStorage.cs",
+              "RelativeDocumentMoniker": "Cross-Platform-Project\\AccountStorage.cs",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AccountStorage.cs",
+              "RelativeToolTip": "Cross-Platform-Project\\AccountStorage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T18:14:54.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FavoritePage.xaml",
+              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml",
+              "RelativeDocumentMoniker": "Cross-Platform-Project\\FavoritePage.xaml",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml",
+              "RelativeToolTip": "Cross-Platform-Project\\FavoritePage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-06T19:27:59.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HistoryPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\HistoryPage.xaml.cs",
+              "RelativeDocumentMoniker": "Cross-Platform-Project\\HistoryPage.xaml.cs",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\HistoryPage.xaml.cs",
+              "RelativeToolTip": "Cross-Platform-Project\\HistoryPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T13:23:53.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FavoritePage.xaml",
+              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml",
+              "RelativeDocumentMoniker": "Cross-Platform-Project\\FavoritePage.xaml",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\FavoritePage.xaml",
+              "RelativeToolTip": "Cross-Platform-Project\\FavoritePage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-06T19:23:16.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FavoritePage.xaml.sg.cs",
+              "DocumentMoniker": "C:\\Users\\vlady\\AppData\\Local\\Temp\\VSGeneratedDocuments\\5878a547-f6c5-933f-0c2f-5adb5ad83b3b\\FavoritePage.xaml.sg.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\VSGeneratedDocuments\\5878a547-f6c5-933f-0c2f-5adb5ad83b3b\\FavoritePage.xaml.sg.cs",
+              "ToolTip": "FavoritePage.xaml.sg.cs [generated by Microsoft.Maui.Controls.SourceGen.CodeBehindGenerator]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenToolTip": "FavoritePage.xaml.sg.cs [generated by Microsoft.Maui.Controls.SourceGen.CodeBehindGenerator]",
+              "WhenOpened": "2026-01-06T19:24:05.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FavoritePage.xaml.sg.cs",
+              "DocumentMoniker": "C:\\Users\\vlady\\AppData\\Local\\Temp\\VSGeneratedDocuments\\e53b32d7-ced4-aac0-2958-e97c753c7ca8\\FavoritePage.xaml.sg.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\VSGeneratedDocuments\\e53b32d7-ced4-aac0-2958-e97c753c7ca8\\FavoritePage.xaml.sg.cs",
+              "ToolTip": "FavoritePage.xaml.sg.cs [generated by Microsoft.Maui.Controls.SourceGen.CodeBehindGenerator]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenToolTip": "FavoritePage.xaml.sg.cs [generated by Microsoft.Maui.Controls.SourceGen.CodeBehindGenerator]",
+              "WhenOpened": "2026-01-06T19:24:16.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FavoritePage.xaml.sg.cs",
+              "DocumentMoniker": "C:\\Users\\vlady\\AppData\\Local\\Temp\\VSGeneratedDocuments\\ae0b35c8-f65a-639d-b52a-9787ea6496a8\\FavoritePage.xaml.sg.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\VSGeneratedDocuments\\ae0b35c8-f65a-639d-b52a-9787ea6496a8\\FavoritePage.xaml.sg.cs",
+              "ToolTip": "FavoritePage.xaml.sg.cs [generated by Microsoft.Maui.Controls.SourceGen.CodeBehindGenerator]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenToolTip": "FavoritePage.xaml.sg.cs [generated by Microsoft.Maui.Controls.SourceGen.CodeBehindGenerator]",
+              "WhenOpened": "2026-01-06T19:24:20.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AccountsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AccountsPage.xaml",
+              "RelativeDocumentMoniker": "Cross-Platform-Project\\AccountsPage.xaml",
+              "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\AccountsPage.xaml",
+              "RelativeToolTip": "Cross-Platform-Project\\AccountsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-06T19:14:39.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "movies.cs",
               "DocumentMoniker": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\movies.cs",
               "RelativeDocumentMoniker": "Cross-Platform-Project\\movies.cs",
               "ToolTip": "C:\\Users\\vlady\\OneDrive - Atlantic TU\\Cross-Platform-Project\\Cross-Platform-Project\\movies.cs",
               "RelativeToolTip": "Cross-Platform-Project\\movies.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAB4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T12:27:31.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T12:27:31.035Z"
             }
           ]
         }

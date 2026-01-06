@@ -3,15 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
-namespace Cross_Platform_Project
+namespace Cross_Platform_Project;
+
+public partial class FavoritePage : ContentPage
 {
-    public partial class FavoritesPage : ContentPage
+    public FavoritePage()
     {
-        public FavoritesPage(List<Movies> favorites)
+        InitializeComponent();
+    }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        if (AppState.CurrentAccount != null)
         {
-            InitializeComponent();
-            FavoritesList.ItemsSource = favorites;
+            FavoritesList.ItemsSource = null;
+            FavoritesList.ItemsSource = AppState.CurrentAccount.Favorite;
         }
     }
 }
